@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url('sign.jpg');
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 30px; 
+  color: #000000;
+  font-family: 'Comfortaa', cursive;
+}
+h4{
+  font-size: 0.5rem;
+  color:rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fgh{
+  width:100%;
+  height: fit-content;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+form {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: wrap row;
+  color: rgb(0, 0, 0);
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+legend{
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  color:rgb(0, 45, 14);
+  padding: 0px 4px 0px 4px;
+  font-size:1.7rem;
+
+}
+.intg {
+  background-color: rgb(234, 255, 253);
+  width: 250px;
+  height: 40px;
+  margin: 0px 30px;
+  font-weight: 20px;
+  font-size: 100%;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px grey;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.intg2 {
+  background-color: rgb(234, 255, 253);
+  width: 250px;
+  height: 40px;
+  margin: 30px;
+  font-weight: 20px;
+  font-size: 100%;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px grey;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+input[type="radio"] {
+  margin: 12px 30px;
+  width: 30px;
+  height: 30px;
+  transform: translateY(10px);
+}
+.finalButton input {
+  width: 10em;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgb(0, 238, 255);
+  background: #157ed2;
+  font-size: 2rem;
+  font-family: "Titillium Web", sans-serif;
+}
+.finalButton input:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px rgb(61, 214, 94);
+}
+span {
+  width: 1000px;
+  height: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+div {
+  width: 40vw;
+  padding: 5vw;
+}
+
+.full {
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: #157ed2;
+}
+a:hover {
+  animation: rotate 0.4s linear forwards;
+  color:rgb(61, 214, 94);
+}
+
+@keyframes rotate {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+fieldset {
+  background-color: rgba(127, 255, 212, 0.249);
+  padding: 30px 30px 0px 30px;
+  border-radius: 8px;
+  border: 5px solid rgb(61, 214, 94);
+}

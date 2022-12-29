@@ -1,0 +1,38 @@
+span.profileSpan {
+  width: 100%;
+  margin: 2rem;
+  text-align: left;
+}
+
+span.profileSpan input {
+  float: right;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 3%;
+  background: lightcyan;
+  color: rgb(0, 15, 15);
+  overflow: scroll;
+  text-align: center;
+  font-size: 115%;
+  padding: 0px 1em 0px 1em;
+}
+
+input.marquee {
+  animation: marquee 30s infinite linear both;
+}
+
+input.marquee:hover {
+  animation: none;
+}
+
+@keyframes marquee {
+  0% {
+    text-indent: 50%;
+  }
+  50% {
+    text-indent: -100%;
+  }
+  100% {
+    text-indent: 100%;
+  }
+}

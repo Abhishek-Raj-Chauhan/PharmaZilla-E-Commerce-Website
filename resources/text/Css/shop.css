@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Exo:wght@200&family=Lora:wght@600&family=M+PLUS+1&family=Rubik:wght@300&family=Tourney:wght@500&display=swap");
+.tabSwitch {
+  width: 80vw;
+  margin: auto;
+  margin-top: 2rem;
+  height: 5rem;
+  border: 1px #157ed2 solid;
+  border-radius: 7px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row nowrap;
+  overflow-y: auto;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+.tab {
+  min-width: 7.5em;
+  min-height: 1.5em;
+  background: rgb(61, 214, 94);
+  color: black;
+  border-radius: 3%;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-weight: bold;
+  text-align: center;
+}
+.champ{
+  display: flex;
+  justify-content: space-between;
+}
+.ch1{
+  font-weight: bold;
+  font-size:1.5rem;
+  color:green;
+  margin-right: 10px;
+}
+.tab:hover {
+  box-shadow: 5px 5px 15px rgb(177, 127, 2);
+  cursor: pointer;
+  animation: shake 0.2s linear forwards;
+}
+
+@keyframes shake {
+  0% {
+  }
+  25% {
+    transform: translateX(0.5rem);
+  }
+  4% {
+    transform: translateX(-0.5rem);
+  }
+  60% {
+    transform: translateX(0.5rem);
+  }
+  75% {
+    transform: translateX(-0.5rem);
+  }
+  100% {
+  }
+}
+
+.itemContainer {
+  min-width: 70vw;
+  min-height: 60vw;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border: 3px rgb(0, 0, 0) solid;
+  border-radius: 3px;
+  overflow-y: auto;
+}
+.innerItemContainer {
+  min-width: 68vw;
+  margin: auto;
+  margin-top:2em;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.innerItemContainer h2 {
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(255, 0, 0);
+  text-decoration: rgb(230, 136, 104);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: "Tourney", cursive; */
+}
+.innerItemContainer h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(0, 108, 132);
+  text-decoration: rgb(230, 136, 104);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item {
+  width: 50vw;
+  height: 12vw;
+  /* min-width: 150px;
+  min-height: 120px; */
+  border-radius: 1%;
+  border: 1px solid saddlebrown;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  overflow: hidden;
+  margin-top: 6vh;
+  font-size: 1rem;
+}
+.itemChange .coster{
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+}
+.Cream .itemImg {
+  background-image: url(../../images/creams.jfif);
+  background-size: cover;
+}
+.Syrup .itemImg {
+  background-image: url(../../images/syrup.jfif);
+  background-size: cover;
+}
+.Other .itemImg {
+  background-image: url(../../images/other.jfif);
+  background-size: cover;
+}
+.Tablet .itemImg {
+  background-image: url(../../images/tablets.jfif);
+  background-size: cover;
+}
+.Supplement .itemImg {
+  background-image: url(../../images/supplements.jfif);
+  background-size: cover;
+}
+.Vaccine .itemImg {
+  background-image: url(../../images/vaccine.jfif);
+  background-size: cover;
+}
+.itemDesc {
+  text-align: center;
+  background: rgb(190, 255, 238);
+  overflow: auto;
+}
+.itemDesc h4 {
+  color: rgb(170, 52, 52);
+  font-size: 200%;
+  margin-top: 0.2rem;
+  font-family: "Comfortaa", cursive;
+}
+.itemDesc p {
+  font-family: "Rubik", sans-serif;
+  padding: 1rem;
+  text-align: left;
+  color: rgb(117, 62, 40);
+}
+
+.itemChange {
+  display: grid;
+  place-items: center;
+}
+.itemChang {
+  display: grid;
+  place-items: center;
+}
+.changeItem {
+  font-family: "Exo", sans-serif;
+  width: 10rem;
+  height: 3.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  color: black;
+  background: rgb(61, 214, 94);
+  font-size:1.5rem;
+  padding: 4px;
+  border-radius: 5px;
+  font-weight: bolder;
+  text-align: center;
+  border:2px solid black;
+
+}
+button {
+  border: none;
+}
+#numberOfItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1.6rem;
+}
+.changeItem #add,
+.changeItem #numberOfItem,
+.changeItem #remove{
+  align-self: center;
+  height:100%;
+  text-align: center;
+  background: rgb(61, 214, 94);
+  line-height: normal;
+  border-radius: 3%;
+  height:100%;
+}
+.changeItem #add:hover {
+  color: rgb(246, 248, 246);
+  background: rgb(0, 157, 255);
+}
+
+.changeItem #remove:hover {
+  color: rgb(246, 248, 246);
+  background: rgb(0, 157, 255);
+}
+.changeItem #add,
+.changeItem #remove{
+  border-radius: 50px;
+  align-items: center;
+  text-align: center;
+  font-size:1.3rem;
+}
+.changeItem .add,
+.changeItem .remove{
+  border-radius: 50px;
+  align-items: center;
+  text-align: center;
+  font-size:1.3rem;
+}
+.changeItem .add,
+.changeItem .remove,
+.changeItem .numberOfItem {
+  align-self: center;
+  height:100%;
+  text-align: center;
+  background: rgb(61, 214, 94);
+  line-height: normal;
+  height:100%;
+}
+.numberOfItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1.6rem;
+}
+.changeItem .add:hover,
+.changeItem .remove:hover {
+  color: rgb(246, 248, 246);
+  background: rgb(0, 157, 255);
+}
+.stock {
+  width: 2.5em;
+  height: 2.5em;
+  border: 3px rgb(61, 214, 94) solid;
+  border-radius: change;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
+  font-size: 15px;
+  background: rgb(255, 255, 255);
+  font-family: "Lora", serif;
+}

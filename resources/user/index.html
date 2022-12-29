@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+
+<title>PharmaZilla</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="resources/text/Css/main.css">
+<link rel="stylesheet" href="resources/text/Css/bulma-customized.css">
+<link rel='stylesheet' href='resources/text/Css/HomeStyle.css'>
+<link rel="stylesheet" href="C:/xampp/htdocs/pharma/resources/text/Css/bulma-customized.css" media="all">
+<link rel='stylesheet' href='resources/text/Css/universal.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-14/css/all.min.css" integrity="sha512-YVm6dLGBSj6KG3uUb1L5m25JXXYrd9yQ1P7RKDSstzYiPxI2vYLCCGyfrlXw3YcN/EM3UJ/IAqsCmfdc6pk/Tg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Comfortaa:wght@700&family=Lavishly+Yours&family=Montserrat+Alternates&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<!-- end of stylesheets -->
+
+<style>
+  #hjk{
+      padding-right: 10px;
+  }
+  #indexer{
+    position: relative;
+  }
+  .adder{
+    align-items: center;
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+      
+  }
+</style>
+</head>
+<body>
+ <a id="top"></a>   
+ <div class="top-bar animate-dropdown">
+    <div class="container">
+      <div class="header-top-inner">
+        <div class="cnt-account">
+          <ul class="list-unstyled">
+            <li class="myaccount"><a href="resources\pages\profile.html"><span>My Account</span></a></li>
+            <li class="wishlist"><a href="resources\pages\cart.html"><span>My Cart</span></a></li>
+            <li class="header_cart hidden-xs"><a href="resources\pages\shop.html"><span>Shop</span></a></li>
+            <li class="check"><a href="resources\logIn\logIn.html"><span>Login</span></a></li>
+            <li class="login"><a href="resources\signIn\signIn.html"><span>SignUp</span></a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+<header class="theme-light">
+    <div class="titleCard">
+        <div id="titler">
+            <div class = "titler"><div class = "logo"><img id="log" width="268px"src="resources/text/Css/logo.png"></div></div>
+            <div class="searcher">
+                <form action="searcher.php" id = "formse" method = "post">
+                    <input id = "sear" type="text" placeholder="Search Medicines & Healthcare Products.." name="search">
+                    <button id = "searsub" type="submit" value="Search"><i id = "hjk" class="fa fa-search" aria-hidden="true"></i></button>
+                    <!-- <input type="submit" id ="searsub" value="Search"> -->
+                </form>
+            </div>
+        </div>
+    </div>
+<nav class="theme-light">
+    <ul>
+        <li><a href="http://localhost/pharma/index.html" ><i class="fas fa-home fa-3x"></i><span class="hidden navtag">Home</span></a></li>
+        <li><a href="resources\pages\shop.html" ><i class="fas fa-store-alt fa-3x"></i><span class="hidden navtag">Shop</span></a></li>
+        <li><a href="resources\pages\cart.html" ><i class="fas fa-shopping-cart fa-3x"></i><span class="hidden navtag">Cart</span></a></li>
+        <li><a href="resources\pages\profile.html" ><i class="far fa-id-badge fa-3x"></i><span class="hidden navtag">Profile</span></a></li>
+        <li><a href="resources\pages\contact.html" ><i class="fas fa-envelope fa-3x"></i><span class="hidden navtag">Contact Us</span></a></li>
+        <li><a href="resources\pages\settings.html" ><i class="fas fa-sliders-h fa-3x"></i><span class="hidden navtag">Settings</span></a></li>
+        
+    </ul>
+</nav>
+</header>
+
+<main class="theme-light">
+    <BR><BR>
+    <div class="adder">
+    <h1 id="greet" >WELCOME TO PharmaZilla!</h1>
+    <div data-cdc-widget='healthBot' data-cdc-theme='theme5' class='cdc-widget-color-white'  data-cdc-language='en-us'></div>
+    <script src='https://t.cdc.gov/1M1B'></script>
+    </div>
+    <div class="WelcomeMsg hidden" id="WelcomeMsg">
+      
+</div>
+<div class="homesale">
+    <div class="flexRowe" >
+        <div class="sign"><h2>New here?</h2><br>
+            <a href="resources/signIn/signIn.html" ><button id="signInButton">Sign Up..</button></a></div> 
+            
+            
+            <div class="line"></div>
+            
+            <div class="log"><h2>Already a customer?</h2><br>
+            <a href="resources/logIn/logIn.html"><button id="logInButton">Log In..</button>
+            </a>
+        </div>
+        
+    </div>
+    <div class="poster">
+      <div class="fade">
+
+        <!-- Full images with numbers and message Info -->
+        <div class="Containers">
+          <img src="resources/text/Css/sale.jpg" style="width:100%;border-radius: 10px;">
+        </div>
+        <div class="Containers">
+          <img src="resources/text/Css/sale4.jpg" style="width:100%;border-radius: 10px;">
+        </div>
+        <div class="Containers">
+          <img src="resources/text/Css/sale3.jpg" style="width:100%;border-radius: 10px;">
+        </div>
+      
+        <!-- Back and forward buttons -->
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The circles/dots -->
+      <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+      </div> 
+    </div>
+</div>
+<div class="wrap">
+    <div class="pdtl-wrapper">
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources\images\Vitamin B6.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice-old"><strike>INR 799.99</strike>  <span class="pdtl-productPrice">INR 399.99</span></p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">Nature Made Vitamin B6 Tablets</a>
+              <p><strong>Description:</strong>...vitamin B6, also called pyridoxine, supports cellular energy production...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 47 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-half-o"></i></span>
+                4.4
+              </a>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail({id: 2})">
+                    <img src="resources/images/VitaminE.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice-old"><strike>INR 1399.99</strike>  <span class="pdtl-productPrice">INR 799.99</span></p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail({id: 2})">Nature Made Vitamin E Tablets</a>
+              <p><strong>Description:</strong>...Vitamin E is an antioxidant and is an essential nutrient for many cells, including heart muscle cells...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({id: 2,ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 47 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.1
+              </a>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources/images/AmericanHealthVitamin.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice-old"><strike>INR 1599.99</strike>  <span class="pdtl-productPrice">INR 799.99</span></p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">American Health Multivatimin Formula Tablets</a>
+              <p><strong>Description:</strong>...More Than A Multiple supplies your body with naturally occurring nutrients from whole foods...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 35 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.0
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr style="background-color: #771b61">
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources/images/22DaysProteinBar.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice">INR 399.99</p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">22 Days Organic Chocolate Chip Nutrition Protein Bars</a>
+              <p><strong>Description:</strong>...Gluten-free, Plant-based, soy-free, contains almonds...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 35 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.0
+              </a>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources/images/AvantEdgeShake.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice">INR 299.99</p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">EAS AdvantEdge Carb Control Ready to Drink Shakes</a>
+              <p><strong>Description:</strong>...are ideal for individuals looking to hit their protein goals while also managing their weight...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 35 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.0
+              </a>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources/images/5Hour.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice">INR 399.99</p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">5-Hour Energy</a>
+              <p><strong>Description:</strong>...Dietary Supplement. Feel it in minutes. Lasts for hours. Hours of energy now - no crash later...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 35 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.0
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr style="background-color: #771b61">
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources/images/Centrum.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice-old"><strike>INR 399.99</strike>  <span class="pdtl-productPrice">INR 199.99</span></p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">Centrum Silver Multivitamin Personalized for Men 50+</a>
+              <p><strong>Description:</strong>...Personalized for men 50+. Heart Health, Immunity, Environmental Stress...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 35 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.0
+              </a>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources/images/vitafusion.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice-old"><strike>INR 899.99</strike>  <span class="pdtl-productPrice">INR 399.99</span></p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">Vitafusion Platinum Multivitamin Gummy Vitamins 50+</a>
+              <p><strong>Description:</strong>...Dietary Supplement. Age essential multivitamins. Supports healthy cholesterol. Natural color & flavor....</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 35 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.0
+              </a>
+            </div>
+          </div>
+          <div class="tile is-4 is-parent is-vertical">
+            <div class="tile is-child">
+              <div class="columns">
+                <div class="column">
+                  <a ui-sref="productDetail">
+                    <img src="resources/images/purepotein.jpg" style="width: 155px; height: 155px;">
+                  </a>
+                </div>
+                <div class="column">
+                  <p class="pdtl-productPrice">INR 599.99</p>
+                  <br>
+                  <a class="button is-small is-primary" href="resources\logIn\logIn.html">
+                    <span><strong style="font-size: 13px">+ Add to Cart</strong></span>
+                    <span class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a class="pdtl-productName" ui-sref="productDetail">Pure Protein Shake</a>
+              <p><strong>Description:</strong>...perfect as a delicious meal replacement, for pre & post workout, or as an anytime ready-to-drink snack...</p>
+            </div>
+            <div class="tile is-9 is-child">
+              <a class="pdtl-productReview" ui-sref="productDetail({ma: 'Reviews'})">
+                Review <span class="tag is-info is-small"> 35 </span> : <br>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star"></i></span>
+                <span class="icon"><i class="fa fa-star-o"></i></span>
+                4.0
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+</main>
+<br><br><br><br>
+<footer class="theme-light flex-row">
+    <ul>
+        <li><a href="https://www.google.com" target="_blank"><i class="fab fa-google fa-0.8x"></i></a></li>
+        <li><a href="" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="" target="_blank"><i class="fab fa-instagram"></i></i></a></li>
+        <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+<div class="fut"> <h1 class="futer">© 2022 PharmaZilla. All Rights Reserved</h1></div>
+</footer>
+<script src='resources/text/Js/scripts.js'></script>
+</body>
+<script>
+  var slidePosition = 1;
+SlideShow(slidePosition);
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+var slidePosition = 0;
+SlideShow();
+
+function SlideShow() {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.animation ="fadee 3.0s"
+    slides[i].style.display = "none";
+  }
+  slidePosition++;
+  if (slidePosition > slides.length) {slidePosition = 1}
+  slides[slidePosition-1].style.display = "block";
+  setTimeout(SlideShow, 3000); // Change image every 2 seconds
+} 
+</script>
+</html>

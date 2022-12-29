@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px; 
+  color: #ffffff;
+  font-family: 'Comfortaa', cursive;
+}
+.err{
+  margin-top: 4rem;
+  color:red;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  /* font-family: 'Comfortaa', cursive; */
+}
+h3{
+  color:rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url('login.jpg');
+  background-size: cover;
+}
+.but{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+form {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: nowrap column;
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  height: 40px;
+  margin: 30px 0px;
+  font-weight: 20px;
+  font-size: 100%;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px grey;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.fgh{
+  width:60%;
+  height: fit-content;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+input[type="reset"],
+input[type="submit"] {
+  margin-top:2rem;
+  width: 7em;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgb(0, 238, 255);
+  background: #40f2ff;
+  font-size: 2rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px rgb(0, 65, 35);
+}
+input[type="reset"]:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px rgb(0, 65, 35);
+}
+.wrapper{
+  
+  box-shadow: 5px 5px 5px 5px rgb(114, 114, 114);
+  width:50vw;
+  background-color: rgba(40, 40, 40, 0.838);
+  border:4px solid rgb(0, 0, 0);
+  padding: 2rem;
+
+}
+a {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  animation: rotate 0.4s linear forwards;
+  color:rgb(131, 255, 216);
+}
+
+@keyframes rotate {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

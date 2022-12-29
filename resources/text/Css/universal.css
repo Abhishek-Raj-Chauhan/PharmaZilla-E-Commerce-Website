@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Josefin+Sans:wght@200&family=Teko&family=Titillium+Web&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
+:root {
+  --dark-color0: black;
+  --light-color0: rgba(255, 255, 255, 0.619);
+  --dark-color1: rgb(61, 214, 94);
+  --light-color1: rgb(66, 185, 139);
+  --dark-color2: rgb(23, 123, 0);
+  --light-color2: rgb(66, 185, 139);
+  --purple: rgb(71, 35, 104);
+  --main-heading: rgb(62, 177, 62);
+  --light-yellow: rgb(0, 0, 0);
+  --yellow: rgb(0, 0, 0);
+  --footer-links: rgb(0, 0, 0);
+  --coolBlue: rgb(68, 173, 131);
+}
+::-webkit-scrollbar {
+  background-color: rgb(61, 214, 94);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #157ed2;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(61, 214, 94);
+}
+scrollbar{
+  background-color: rgb(61, 214, 94);
+  width: 10px;
+}
+scrollbar-thumb {
+  background-color: #157ed2;
+}
+scrollbar-track {
+  background-color: rgb(61, 214, 94);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+}
+
+.disappear {
+  opacity: 0;
+}
+
+.flexRow {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  /* favorite flexbox config basically for nav bar and other stuffs of similar requirements */
+}
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background: var(--light-color0);
+  color: var(--dark-color0);
+}
+input[reset],
+button:hover {
+  cursor: pointer;
+  animation: shadow 0.2s linear forwards;
+}
+@keyframes shadow {
+  0% {
+  }
+  100% {
+    box-shadow: 5px 5px 20px var(--dark-color1);
+  }
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+}
+
+.theme-dark,
+header.theme-light,
+nav.theme-light,
+footer.theme-light {
+  transition: background 0.8s linear;
+  background: var(--dark-color1);
+  color: var(--light-color1);
+}
+
+header .theme-dark,
+nav .theme-dark,
+footer .theme-dark {
+  transition: background 0.8s linear;
+  background: var(--dark-color2);
+  color: var(--light-color2);
+}
+
+.theme-light {
+
+  border-bottom: 1.5px solid black;
+  background: var(--light-color0);
+  color: var(--dark-color0);
+}
+
+.theme-transparent {
+  background: transparent;
+  color: var(--light-color0);
+}
+
+.titleCard {
+  width: 100%;
+  height: 70%;
+  border: none;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  line-height: 15vh;
+  color: var(--main-heading);
+}
+nav {
+  padding: 1.5vw 1vw 0vw 1vw;
+  width: 100%;
+  border: none;
+  line-height: 30%;
+  position: sticky;
+  top: 0;
+}
+
+nav ul,
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+nav ul li {
+  width: 8vw;
+  height: 8vh;
+  border-radius: 50% 50% 0% 0%;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: var(--light-yellow);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 8vh;
+  line-height: 4vh;
+  font-size: 0.9rem;
+}
+nav li a:hover {
+  color: var(--yellow);
+  line-height: 4vh;
+  font-size: 1.6rem;
+}
+nav li a:hover i {
+  width: 100%;
+  height: 100%;
+  animation: wane 0.2s linear both;
+
+  display: none;
+  opacity: 0;
+}
+span.navtag {
+  position: relative;
+  font-family: "Arima Madurai", cursive;
+  /* add any properties if required for the navbars hidden content */
+}
+nav li a:hover span.hidden {
+  animation: showing 0.4s ease-in forwards;
+  display: block;
+  height: 8vh;
+}
+main {
+  margin: auto;
+  display: flex;
+  /* max-width: 92vw; */
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column wrap;
+  min-height: 80vh;
+  padding-top: 15px;
+}
+
+footer i {
+  color: var(--footer-links);
+  font-size: 3rem;
+  margin: 1vh;
+}
+footer div {
+  text-align: center;
+  background: var(--dark-color1);
+}
+
+footer li :hover {
+  animation: wiggle 0.5s linear forwards;
+}
+
+fieldset {
+  margin: 2rem;
+  width: 50vw;
+  font-size: 1.8rem;
+  border: 5px solid black;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  font-family: "Special Elite", cursive;
+}
+.carty{
+  margin: -2rem 2rem 2rem 2rem;
+  width: 50vw;
+  font-size: 1.8rem;
+  border: 5px solid black;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  font-family: "Special Elite", cursive;
+}
+fieldset ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+fieldset li a {
+  color: black;
+  font-size: 2.4rem;
+}
+li a:hover {
+  color: var(--dark-color2);
+}
+legend {
+  font-family: "Cabin Sketch", cursive;
+  font-size: 1rem;
+  animation: move 4s infinite linear both;
+  background: var(--coolBlue);
+  border-radius: 10%;
+  color: var(--light-color0);
+  padding: 0.5%;
+}
+
+legend:hover {
+  animation: blinkTwice 0.4s linear forwards;
+}
+
+button span.pay {
+  position: fixed;
+  text-align: center;
+  line-height: 50px;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(217, 255, 0);
+  color: rgb(0, 0, 0);
+  border: 2px white solid;
+  font-size: 225%;
+}
+
+button span.pay:hover {
+  animation: wiggle 2s linear;
+  box-shadow: 5px 5px 10px goldenrod;
+}
+
+@keyframes blinkTwice {
+  0% {
+  }
+  30% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+  }
+}
+@keyframes move {
+  0% {
+  }
+  50% {
+    scale: 2x;
+  }
+  100% {
+    scale: 1.5x;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    color: rgb(72, 85, 160);
+  }
+}
+
+@keyframes showing {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  40% {
+    transform: rotate(-25deg);
+  }
+  60% {
+    transform: rotate(25deg);
+  }
+  75% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes wane {
+  0% {
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}

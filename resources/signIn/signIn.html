@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <link rel="stylesheet" href="signIn.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-14/css/all.min.css"
+      integrity="sha512-YVm6dLGBSj6KG3uUb1L5m25JXXYrd9yQ1P7RKDSstzYiPxI2vYLCCGyfrlXw3YcN/EM3UJ/IAqsCmfdc6pk/Tg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <a href="../../index.html" class="back"
+      ><i class="fas fa-arrow-circle-left fa-5x"></i
+    ></a>
+    <div class="full">
+      <h1>Sign Up ...</h1>
+      <form action="signInto.php" method="POST">
+        <div>
+          <fieldset>
+            <legend>Personal Details:</legend>
+            <div class="fgh">
+              <h3>Name:</h3>
+              <input class="intg" 
+                type="text"
+                name="name"
+                placeholder="enter your name..."
+            />
+            </div>
+            <br /><br />
+            <div class="fgh">
+              <h3>Password:</h3>
+              <br /><input class="intg" 
+                type="password"
+                name="pass"
+                placeholder="enter your new password..."
+            />
+            </div>
+            <br /><br />
+            <div class="fgh">
+              <h3>Confirm Password:</h3>
+              <br /><input class="intg" 
+                type="password"
+                name="confpass"
+                placeholder="enter your password again..."
+            />
+            </div>
+            <br /><br />
+            <div class="fgh">
+              <h3>Age:</h3>
+              <br /><input class="intg" 
+                type="number"
+                step="1"
+                min="1"
+                max="150"
+                name="age"
+                placeholder="enter your age"
+            />
+            </div>
+            <br /><br />
+            <div class="fgh">
+              <h3>Work:</h3>
+              <br /><input  class="intg" type="text" name="work" placeholder="job/occupation"
+            />
+            </div>
+            <br /><br />
+            <div class="fgh">
+              <h3>Gender:</h3>
+              <br /><label for="gen1"><b>Male</b
+              ></label><input type="radio" id="gen1" name="gen" value="Male" /><label for="gen2"><b
+                >Female</b
+              ></label><input type="radio" name="gen" id="gen2" value="Female"
+            />
+            </div>
+            
+            <br /><br />
+            <div class="fgh">
+              <h3>Birthday:</h3>
+              <br /><input  class="intg" type="date" name="bday"
+            />
+            </div>
+            
+            <br /><br />
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend>Delivery Details:</legend>
+            <div class="fgh">
+              <h3>Address Line 1:</h3>
+              <br /><input class ="intg2" type="text" name="ad1" placeholder="Address Line 1"
+            />
+            </div>
+            <div class="fgh">
+              <h3>Address Line 2:</h3>
+              <br /><input class ="intg2" type="text" name="ad2" placeholder="Address Line 2"
+            />
+            </div>
+            <div class="fgh">
+              <h3>City:</h3>
+              <br /><input class ="intg2" type="text" name="city" placeholder="City?"
+            />
+            </div>
+            <div class="fgh">
+              <h3>State:</h3>
+              <br /><input class ="intg2" type="text" name="state" placeholder="State"
+            />
+            </div>
+            <div class="fgh">
+              <h3>Country:</h3>
+              <br /><input class ="intg2" type="text" name="cou" placeholder="Country"
+            />
+            </div>
+          </fieldset>
+        </div>
+        <span class="finalButton">
+          <input type="reset" value="Reset" />
+          <input id = "h" type="submit" value="Let's fly In!"/>
+        </span>
+      </form>
+    </div>
+    <!-- <script src="signIn.js"></script> -->
+  </body>
+</html>
